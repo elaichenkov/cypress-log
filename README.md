@@ -34,6 +34,23 @@ module.exports = {
 };
 ```
 
+Then, you can use the `cy.log` command in your tests as you've used to do it before. The only difference is that you can any data type as an argument. For example:
+
+```js
+// Y
+cy.log('Hello World!');
+cy.log({ foo: { bar: { baz: 'baz' } } });
+cy.log(['foo', 'bar', 'baz']);
+```
+
+So, if you run your tests in the Cypress Runner, you will see the following:
+
+![ui](./assets/ui.png)
+
+and if you run your tests in non-interactive mode, you will see the following in the terminal:
+
+![terminal](./assets/terminal.png)
+
 ## Author
 
 Yevhen Laichenkov <elaichenkov@gmail.com>
