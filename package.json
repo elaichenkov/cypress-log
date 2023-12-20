@@ -1,11 +1,16 @@
 {
   "name": "cypress-log",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom Cypress command that overrides the default cy.log() command and adds the ability to log to the terminal and the Command Log.",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "release": "release-it --github.release",
+    "release:ci": "npm run release -- --ci --npm.skipChecks --no-git.requireCleanWorkingDir",
+    "release:patch": "npm run release -- patch",
+    "release:minor": "npm run release -- minor",
+    "release:major": "npm run release -- major"
   },
   "repository": {
     "type": "git",
@@ -25,6 +30,7 @@
   },
   "homepage": "https://github.com/elaichenkov/cypress-log#readme",
   "devDependencies": {
-    "cypress": "^13.6.1"
+    "cypress": "^13.6.1",
+    "release-it": "^17.0.1"
   }
 }
