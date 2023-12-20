@@ -1,6 +1,6 @@
 {
   "name": "cypress-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom Cypress command that overrides the default cy.log() command and adds the ability to log to the terminal and the Command Log.",
   "main": "index.js",
   "scripts": {
