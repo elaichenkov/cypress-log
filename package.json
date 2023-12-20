@@ -1,0 +1,30 @@
+{
+  "name": "cypress-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "cy:open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elaichenkov/cypress-log.git"
+  },
+  "keywords": [
+    "cypress",
+    "log",
+    "e2e",
+    "testing",
+    "plugin"
+  ],
+  "author": "Yevhen Laichenkov <elaichenkov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elaichenkov/cypress-log/issues"
+  },
+  "homepage": "https://github.com/elaichenkov/cypress-log#readme",
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  }
+}
