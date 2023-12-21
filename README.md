@@ -34,7 +34,7 @@ module.exports = {
 };
 ```
 
-Then, you can use the `cy.log` command in your tests as you've used to do it before. The only difference is that you can any data type as an argument. For example:
+Then, you can use the `cy.log` command in your tests as you've used to do it before. For example:
 
 ```js
 cy.log('Hello, World!');
