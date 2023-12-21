@@ -1,12 +1,11 @@
 const { inspect } = require('util');
 
-function log(message) {
+function log(messages) {
+  const sanitizeMessages = messages.map((message) =>
+    typeof message === 'object' ? inspect(message, { showHidden: false, depth: null, colors: true }) : message,
+  );
   console.log('\x1b[90m\ncy.log:\x1b[0m');
-  if (typeof message === 'object') {
-    console.log(inspect(message, { showHidden: false, depth: null, colors: true }));
-  } else {
-    console.log(message);
-  }
+  console.log(...sanitizeMessages);
 
   return null;
 }
