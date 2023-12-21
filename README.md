@@ -20,7 +20,7 @@ Also, you need to add the following to your `cypress.config.js` file:
 
 ```js
 // Import the task function
-const { log } = require('cypress-log');
+const { log } = require('cypress-log/log.task');
 
 module.exports = {
   // ...
